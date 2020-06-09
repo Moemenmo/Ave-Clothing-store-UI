@@ -1,0 +1,93 @@
+.nav-bar{
+    height: 60px;
+    background-color: $white-color;
+    display: flex ;
+    justify-content: space-between;
+    margin: 0px;
+    //position: fixed;
+    //width: 100%;
+    Width : 1180px;
+    Margin : 0 auto;
+
+   &__logo{
+       @include img;
+       width: 10%;
+       margin: 15px;
+
+   }
+   &__btns{
+       height: 100%;
+       width: max-content;
+    //    position: relative;
+    //    left: 10%;
+       display: flex;
+   }
+   &__icons{
+       width: 10%;
+       list-style: none;
+       font-weight: bold;
+       font-size: 30px;
+       span{
+        font-size: 20px;
+       }
+
+   }
+}
+.mini-nav{
+    //width: 100%;
+    height: 30px;
+    background-color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: solid #ededed;
+    // margin: 0 auto;
+    Width : 1180px;
+    Margin : 0 auto;
+    &__left{
+        display: flex;
+        background-color:$white-color;
+        padding: 5px;
+        &__polo{
+            padding: 5px;
+        }
+        &__number{
+            padding: 5px;
+            border-left:solid #ededed;
+            border-right:solid #ededed;
+            &__text{
+                color: $main-color;
+                font-size: 15px;
+            }
+        }
+        &__summer{
+            padding: 5px;
+        }
+    }
+    &__right{
+        display: flex;
+        background-color: $white-color;
+        padding: 5px;
+        &__acc{
+            padding: 5px;
+        }
+        &__store{
+            padding: 5px;
+            border-left:solid #ededed;
+            border-right:solid #ededed;
+        }
+        &__icons{
+            padding: 5px;
+            font-size: 20px;
+            color: $main-color;
+            margin-right: 30px;
+        }
+
+    }
+}
+.full-nav{
+    width: 100%;
+    background-color: #f3f3f3;
+    position: fixed;
+    z-index: 3;
+}

@@ -1,0 +1,190 @@
+.cover-img{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url('../imgs/middel-cover-2.png');
+    text-align: center;
+        background-size: cover;
+        margin-bottom: 2%;
+        &__text-p
+        {
+            font-size: 10px;
+            color: $white-color;
+            font-size: 10px;
+            top: 31%;
+            position: relative;
+            .email{
+                position: relative;
+    display: flex;
+    border-bottom: solid #ededed;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 40px;
+    top: 51%;
+    left: 37%;
+    margin-top: 40px;
+    .email__txt-area__textarea--white{
+        background-color: transparent;
+outline-width: 0;
+color:white;
+}
+            }
+        }
+        &--2{
+            background-image: url('../imgs/middel-cover-2.png');
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+}
+.cover{
+    display: flex;
+    font-size: 100px;
+    //font-weight: bold;
+    height: max-content;
+    width:max-content;
+    color:$white-color;
+    flex-direction: row;
+    
+    &__txt{
+           display: flex;
+           &--dress{
+            
+               position: absolute;
+                animation-name: cover;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function:ease-in-out;
+              //  z-index: 0;
+                   width: 0;
+                   opacity: 1;
+                   height: 0;
+               
+           } 
+           &--Outfitters{
+            position: absolute;
+            animation-name: cover;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function:ease-in-out;
+
+            //z-index: 1;
+                width: 0;
+                height: 0;
+                opacity: 0;
+           }
+           &--shopping{
+            position: absolute;
+            animation-name: cover;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in-out;
+            animation-delay: 2s;
+            //z-index: 2;
+            width: 0px;
+            height: 0;
+            opacity: 0;
+       }
+       &--urban{
+            width:max-content ;
+       }
+
+    }
+}
+.dropdown-content{
+    //display: none;
+    visibility: hidden;    
+    transition: all .5s ease-in;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    &--pages{
+        color: $black-color;
+      width: 200px;
+      background-color: $white-color;
+      line-height: 40px;
+      text-align: start;
+      //padding-left:22px;
+      
+      p{
+      padding-left:22px;
+
+          transition:0.5s ease;
+          &:hover{
+              color: $main-color;
+          }
+      }
+    }
+    &__shop{
+        display: flex;
+        
+        &--CATEGORIES{
+            background-color: white;
+        }
+        &--img{
+            @include img
+        }
+
+    }
+  }
+.main-cover{
+    width: 100%;
+    height: 600px;
+    background-image: url("../imgs/main-cover.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 8%;
+    &__img{
+        @include img;
+        width: 20%;
+    height: 20%;
+    top: 25%;
+    left: 39%;
+    position: relative;
+    }
+    &__animation{
+        width: 20%;
+        height: 20%;
+        top: 30%;
+        left: 30%;
+        position: relative;
+    }
+    &__btn{
+        width: 20%;
+        height: 20%;
+        top: 37%;
+        left: 40%;
+        position: relative;
+
+    }
+}
+.hidden{
+    height: 60px;
+    background-color: $white-color;
+    //display: flex ;
+    justify-content: space-between;
+    margin: 0px;
+    //position: fixed;
+    //width: 100%;
+    Width : 1180px;
+    Margin : 0 auto;
+    display: none;
+    
+}
+.show{
+    //display: block;
+}
+@media (max-width:1000px)  {
+    .hidden{
+        display: flex;
+    }
+    .show{
+        display: none;
+    }
+
+
+
+}
